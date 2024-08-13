@@ -1,0 +1,117 @@
+{
+  "dataSources": [
+    {
+      "name": "USD0++",
+      "address": "0x35D8949372D46B7a3D5A56006AE77B215fc69bC0",
+      "startBlock": 20025769,
+      "eventHandlers": [
+        {
+          "event": "Transfer(address,address,uint256)",
+          "handler": "handleTransfer"
+        }
+      ]
+    },
+    {
+      "name": "USD0/USDC CurvePool",
+      "address": "0x14100f81e33C33Ecc7CDac70181Fb45B6E78569F",
+      "startBlock": 20169039,
+      "eventHandlers": [
+        {
+          "event": "Transfer(address indexed,address indexed,uint256)",
+          "handler": "handleTransfer"
+        },
+        {
+          "event": "AddLiquidity(indexed address,uint256[],uint256[],uint256,uint256)",
+          "handler": "handleAddLiquidity"
+        },
+        {
+          "event": "TokenExchange(indexed address,int128,uint256,int128,uint256)",
+          "handler": "handleTokenExchange"
+        }
+      ]
+    },
+    {
+      "name": "USD0/USDC CurveGauge",
+      "address": "0xC2a56E8888786A30A5b56Cbe4450A81DDF26aC0C",
+      "startBlock": 20169039,
+      "eventHandlers": [
+        {
+          "event": "Transfer(indexed address,indexed address,uint256)",
+          "handler": "handleTransfer"
+        }
+      ]
+    },
+    {
+      "name": "USD0/USD0++ CurvePool",
+      "address": "0x1d08E7adC263CfC70b1BaBe6dC5Bb339c16Eec52",
+      "startBlock": 20169549,
+      "eventHandlers": [
+        {
+          "event": "Transfer(indexed address,indexed address,uint256)",
+          "handler": "handleTransfer"
+        },
+        {
+          "event": "AddLiquidity(indexed address,uint256[],uint256[],uint256,uint256)",
+          "handler": "handleAddLiquidity"
+        },
+        {
+          "event": "TokenExchange(indexed address,int128,uint256,int128,uint256)",
+          "handler": "handleTokenExchange"
+        }
+      ]
+    },
+    {
+      "name": "USD0/USD0++ CurveGauge",
+      "address": "0x5C00817B67b40f3b347bD4275B4BBA4840c8127a",
+      "startBlock": 20286348,
+      "eventHandlers": [
+        {
+          "event": "Transfer(indexed address,indexed address,uint256)",
+          "handler": "handleTransfer"
+        }
+      ]
+    },
+    {
+      "name": "USD0++/USDC Morpho Market",
+      "address": "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
+      "startBlock": 20371534,
+      "eventHandlers": [
+        {
+          "event": "SupplyCollateral(indexed bytes32,indexed address,indexed address,uint256)",
+          "handler": "handleSupplyCollateral"
+        },
+        {
+          "event": "WithdrawCollateral(indexed bytes32,address,indexed address,indexed address,uint256)",
+          "handler": "handleWithdrawCollateral"
+        }
+      ]
+    },
+    {
+      "name": "USD0USD0++/USDC Morpho Market",
+      "address": "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
+      "startBlock": 20377048,
+      "eventHandlers": [
+        {
+          "event": "SupplyCollateral(indexed bytes32,indexed address,indexed address,uint256)",
+          "handler": "handleSupplyCollateral"
+        },
+        {
+          "event": "WithdrawCollateral(indexed bytes32,address,indexed address,indexed address,uint256)",
+          "handler": "handleWithdrawCollateral"
+        }
+      ]
+    },
+    {
+      "name": "USDC Morpho Vault",
+      "address": "0xd63070114470f685b75B74D60EEc7c1113d33a3D",
+      "startBlock": 20377233,
+      "eventHandlers": [
+        {
+          "event": "Transfer(indexed address,indexed address,uint256)",
+          "handler": "handleTransfer"
+        }
+      ]
+    }
+  ]
+}
+
