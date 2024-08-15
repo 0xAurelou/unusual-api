@@ -1,4 +1,4 @@
-module github.com/0xAurelou/unusual-api
+module unusual-api
 
 go 1.21
 
@@ -7,6 +7,7 @@ toolchain go1.22.6
 require (
 	github.com/ethereum/go-ethereum v1.14.8
 	github.com/joho/godotenv v1.5.1
+	go.uber.org/zap v1.27.0
 )
 
 require (
@@ -28,6 +29,7 @@ require (
 	github.com/supranational/blst v0.3.11 // indirect
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
+	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/crypto v0.23.0 // indirect
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa // indirect
 	golang.org/x/sync v0.7.0 // indirect
