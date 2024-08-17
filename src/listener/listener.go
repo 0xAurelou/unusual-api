@@ -89,4 +89,6 @@ func (l *Listener) handleLog(name string, vLog types.Log) error {
 	// Implement log handling logic here
 	// This could involve decoding the log data and calling appropriate handler functions
 	fmt.Println(name, vLog)
+
+	return nil
 }
