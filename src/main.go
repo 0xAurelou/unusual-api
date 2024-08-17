@@ -45,6 +45,8 @@ func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
+	logger.Info("Starting listener...")
+
 	go l.Start(ctx)
 
 	// Wait for interrupt signal to gracefully shut down
